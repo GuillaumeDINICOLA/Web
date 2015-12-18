@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<title>Médiathèque Côte Rambla</title>
+		<meta charset="UTF-8">
+		<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,300' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	</head>
+	<body>
+		<header>
+			<h1>Médiathèque Côte Rambla</h1>
+			<div id="logo-rambla">Médiatheque cote rambla</div>
+			<nav>
+				<ul>
+					<li class="home"><a href="index.html">Accueil</a></li>
+					<li class="emprunts"><a href="#">Mes prêts</a></li>
+					<li class="compte"><a href="#">Mes retours</a></li>
+				</ul>
+			</nav>
+		</header>
+		<main>
+			<section id="form-recherche">
+				<section id="monform">
+				<h2><i class="fa fa-search"></i> Rechercher un ouvrage</h2>
+				<form id="recherche" name="recherche" action ="#">
+					<label for="nom" id="labNom">Nom ouvrage : </label><input type="text" id="nom" name="nom"/><br>
+					<label for="auteur" id="labAuteur">Auteur : </label><input type="text" id="auteur" name="auteur"/><br>
+					<label for="annee" id="labAnnee">Année : </label>
+					<select name="annee">
+						<optgroup label="Avant Alexis Lucien">
+							<option value="1992">1992</option>
+						</optgroup>
+						<optgroup label ="Après Alexis Lucien">
+							<option value="2000">2000</option>
+							<option value="2001">2001</option>
+							<option value="2002">2002</option>
+							<option value="2003">2003</option>
+							<option value="2004">2004</option>
+							<option value="2005">2005</option>
+							<option value="2006">2006</option>
+							<option value="2007">2007</option>
+							<option value="2008">2008</option>
+							<option value="2009">2009</option>
+							<option value="2010">2010</option>
+							<option value="2011">2011</option>
+							<option value="2012">2012</option>
+							<option value="2013">2013</option>
+							<option value="2014">2014</option>	
+							<option value="2015">2015</option>
+						</optgroup>
+					</select><br>
+					<label for="edition" id="labEdition">Edition : </label><input type="text" id="edition" name="edition"/><br>
+					<input type="submit" value="Envoyer">
+				</form>
+				</section>
+				<section id="resultats">
+					<table border="0">
+						<thead>
+							<tr>
+								<th>ID</th>
+								<th class="titre">Nom ouvrage</th>
+								<th>Auteur</th>
+								<th>Année</th>
+								<th>Edition</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>1</td>
+								<td class="titre pris"><a href="article.html">En route pour le Pol...Petit Poulet</a></td>
+								<td>A.Lucien</td>
+								<td>2015</td>
+								<td>Editions Rambla</td>								
+							</tr>
+							<tr>
+								<td>2</td>
+								<td class="titre"><a href="article.html">Blabla</a></td>
+								<td>Machin-Chose</td>
+								<td>1986</td>
+								<td>Editions Ipsum</td>								
+							</tr>
+							<tr>
+								<td>3</td>
+								<td class="titre"><a href="article.html">Blabla</a></td>
+								<td>Machin-Chose</td>
+								<td>1986</td>
+								<td>Editions Ipsum</td>								
+							</tr>
+							<tr>
+								<td>4</td>
+								<td class="titre"><a href="article.html">Blabla</a></td>
+								<td>Machin-Chose</td>
+								<td>1986</td>
+								<td>Editions Ipsum</td>								
+							</tr>
+							<tr>
+								<td>5</td>
+								<td class="titre"><a href="article.html">Blabla</a></td>
+								<td>Machin-Chose</td>
+								<td>1986</td>
+								<td>Editions Ipsum</td>								
+							</tr>
+							<tr>
+								<td>6</td>
+								<td class="titre pris"><a href="article.html">Blabla</a></td>
+								<td>Machin-Chose</td>
+								<td>1986</td>
+								<td>Editions Ipsum</td>								
+							</tr>
+							<tr>
+								<td>7</td>
+								<td class="titre"><a href="article.html">Blabla</a></td>
+								<td>Machin-Chose</td>
+								<td>1986</td>
+								<td>Editions Ipsum</td>								
+							</tr>
+						</tbody>
+					</table>
+				</section>
+				
+			</section>
+		</main>
+		<footer>
+			<p>Made with pride by <a href="#">Guillaume Nicola</a></p>
+		</footer>
+	</body>
+</html>
