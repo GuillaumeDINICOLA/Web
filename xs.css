@@ -1,0 +1,64 @@
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+	
+	/* en tête */
+	header{
+		height: 33px;
+	}
+		#logo-rambla
+		{
+			height: 33px;
+			background-size: cover;
+			background-position: bottom center;
+		}
+		header li a:before{
+			font-size: 25px;
+			vertical-align: bottom;			
+		}
+	/* Formulaire recherche */
+	#monform
+	{
+		width:100%;
+	}
+	#recherche>input,#recherche>select,#recherche>label{
+		width:95%;
+		padding:5px 2.5%;
+	}
+	
+		#recherche>input[type='submit']
+		{
+			margin:10px 0;
+			width:95%;
+			background:darkgrey;
+			border-radius: 5px 5px 5px 5px;
+			-moz-border-radius: 5px 5px 5px 5px;
+			-webkit-border-radius: 5px 5px 5px 5px;
+			color:white;
+			text-transform:uppercase;
+			font-style:bold;
+			cursor:pointer;
+		}	
+	
+	/* Page article */
+	.article-page main>section {
+		width: 90%;
+		margin-left: 5%;
+	}
+	
+	aside.recommandations {
+		display:none;
+	}
+	
+	.ouvrage video
+	{
+		width:100%;
+	}
+	
+/* Page profil */
+
+	.bloc
+	{
+		width:90%;
+		margin:5%;
+	}
+}

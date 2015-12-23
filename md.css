@@ -1,0 +1,46 @@
+@media only screen and (max-width : 992px) {
+	/* Formulaire recherche */
+	#monform
+	{
+		width:80%;
+	}
+	
+	
+	/* Page article */
+	.article-page main>section {
+		width: 100%;
+		margin-left: 10%;
+		display: inline-block;
+	}
+	
+	aside.recommandations {
+		width: 100%;
+		display: inline-block;
+	}
+	
+	aside.recommandations  h2
+	{
+		text-align:center;
+	}
+	
+	aside.recommandations article
+	{
+		display:inline-block;
+		width:40%;
+		margin:4.5%;
+	}
+	
+/* Page profil */
+
+
+	.profil-page main>section
+	{
+		width: 100%;
+		margin:0%;
+	}
+	.bloc
+	{
+		width:44%;
+		margin:2.5%;
+	}
+}

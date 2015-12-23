@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<title>Médiathèque Côte Rambla</title>
+		<meta charset="UTF-8">
+		<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,300' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<!-- Rwd -->
+			<link rel="stylesheet" type="text/css" href="md.css">		
+			<link rel="stylesheet" type="text/css" href="sm.css">
+			<link rel="stylesheet" type="text/css" href="xs.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	</head>
+	<body class="profil-page">
+		<header>
+			<h1>Médiathèque Côte Rambla</h1>
+			<div id="logo-rambla">Médiatheque cote rambla</div>
+			<nav>
+				<ul>
+					<li class="home"><a href="index.html">Accueil</a></li>
+					<li class="emprunts"><a href="#">Mes prêts</a></li>
+					<li class="compte"><a href="profil.html">Mon compte</a></li>
+				</ul>
+			</nav>
+		</header>
+		<main>
+			<section>
+				<h2>Mon profil</h2>
+				<form action="#">
+					<div class="bloc">
+					<h3>Identité</h3>
+						<label for="nom">Nom :</label><br><input name="nom" id="nom" type="text" /><br>
+						<label for="prenom">Prénom :</label><br><input name="prenom" id="prenom" type="text" /><br>
+						<label for="naissance">Date de naissance:</label><br><input name="naissance" id="naissance" type="date" /><br>
+						<label for="age">Age :</label><br><input name="age" id="age" type="text" readonly /><br>
+						<label for="mail">Mail :</label><br><input name="mail" id="mail" type="email" /><br>
+					</div>
+					<div class="bloc">
+						<h3>Adresse :</h3>
+						<label for="adresse">Adresse:</label><br><input name="adresse" id="adresse" type="text" /><br>
+						<label for="cp">CP :</label><br><input maxLength="6" name="cp" id="cp" type="text" /><br><label for="ville">Ville :</label><br><input name="ville" id="ville" type="text" /><br>
+					</div>
+					<div class="bloc">
+						<h3>Abonnement :</h3>
+						<label for="date_fin_abo">Date d'abonnement:</label><br><input name="date_fin_abo" id="date_fin_abo" type="date" value="1996-12-19"/><br>
+						<label for="date_fin_abo">Date d'abonnement:</label><br><input name="date_fin_abo" id="date_fin_abo" type="date" readonly value="2048-12-19"/><br>
+					</div>
+					<div class="bloc-envoi">
+						<input type="submit" value="Envoyer">
+					</div>
+				</form>
+			</section>			
+		</main>
+
+		<footer>
+			<p>Réalisation: <a href="#">Guillaume Nicola</a></p>
+		</footer>
+	</body>
+</html>
