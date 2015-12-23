@@ -1,0 +1,193 @@
+body
+{
+	font-family:Open Sans;
+}
+
+/* En tête */
+
+	header
+	{
+		background-color:white;
+		background-image: url(../img/barre_haut.jpg);
+		background-size: cover;
+		background-position: center center;
+		height:125px;
+	}
+	h1{display:none;}
+
+	
+	#logo-rambla
+	{
+		height:125px;
+		/* Transitions */
+		display:inline-block;
+		background-image:url('../img/logo.jpg');
+		background-color:white;
+		background-size:contain;
+		background-position:center;
+		background-repeat:no-repeat;
+		text-indent:-9999px;
+	}
+	
+	header nav
+	{
+		background: #6F0000;
+		display: inline-block;
+		bottom: 0px;
+		height: 30px;
+		line-height: 30px;
+	}
+		header nav ul
+		{
+			margin:0px;
+		}
+		header li{
+			list-style:none;
+			text-align: center;
+			text-decoration:uppercase;
+			display:inline-block;
+		}
+			header li:first-child{
+				margin-left: 0px;
+			}
+			header li a{
+				white-space: nowrap;
+				text-decoration:none;
+				color:white;
+				-webkit-transition : border 500ms ease-out;
+				-moz-transition : border 500ms ease-out;
+				-o-transition : border 500ms ease-out;
+				transition : border 500ms ease-out;
+				border-bottom: rgba(255, 255, 255, 0) solid 3px;	
+				padding-bottom: 3px;
+			}
+			header li a:hover{
+				border-bottom: white solid 3px;
+				color:white;
+				text-decoration:none;
+			}
+				header li:hover:before{
+					border-bottom: white solid 3px;
+									
+				}
+			
+			header li a:before{
+				margin-right: 5px;
+				color: white;
+				font-family: FontAwesome;
+				-webkit-transition : border 500ms ease-out;
+				-moz-transition : border 500ms ease-out;
+				-o-transition : border 500ms ease-out;
+				transition : border 500ms ease-out;
+				border-bottom: rgba(255, 255, 255, 0) solid 3px;	
+				padding-bottom: 1px;					
+			}
+				header li.home a:before{
+					content: "\f015";
+				}
+				header li.emprunts a:before{
+					content: "\f02d";
+				}			
+				header li.compte a:before{
+					content: "\f013";
+				}	
+				header li.logout a:before{
+					content: "\f08b";
+				}	
+				header li.login a:before{
+					content: "\f090";
+				}					
+/* Footer */
+
+	footer
+	{
+		margin-top:50px;
+		height: 100px;
+		background: #6F0000;
+		color: white;
+	}
+		footer>p{
+			text-align: center;
+			display: block;
+			margin: auto;
+			height: 100px;
+			line-height: 100px;
+		}
+			footer a,footer a:hover,footer a:active,footer a:focus{
+				color:white;
+				text-decoration:none;
+			}
+/* Formulaire */
+		.form
+		{
+			padding:30px 0px;
+		}
+		.form input,.form select,.form label,.form textarea{
+			outline: 0;
+			margin-top:5px;
+			margin-bottom:5px;
+			padding: 1.25%;			
+			/* Fix pour régler le problème de proportion entre les éléments */
+
+			-webkit-transition: background 1s ease,color 1s ease;
+			-moz-transition: background 1s ease,color 1s ease;
+			-ms-transition: background 1s ease,color 1s ease;
+			-o-transition: background 1s ease,color 1s ease;
+			transition: background 1s ease,color 1s ease;
+		}
+			.form input:focus,.form select:focus,.form input:hover,.form select:hover,.form textarea:hover,.form textarea:focus{
+				background: hsl(41, 100%, 90%);
+			}
+			.form input:read-only:hover{
+				background:rgba(111,0,0,0.20);
+				color:white;
+			}
+		.form input,.form select,.form textarea
+		{
+			border-radius: 20px 20px 20px 20px;
+			-moz-border-radius: 20px 20px 20px 20px;
+			-webkit-border-radius: 20px 20px 20px 20px;
+			border: 0px solid #000000;
+			background:#fff;
+			-webkit-box-shadow: inset 7px 13px 132px -13px rgba(0,0,0,0.15);
+			-moz-box-shadow: inset 7px 13px 132px -13px rgba(0,0,0,0.15);
+			box-shadow: inset 7px 13px 132px -13px rgba(0,0,0,0.15);		
+		}
+		
+		textarea{
+			resize:none;
+		}
+	/* tableau */
+	#resultats table{ padding:0px 15px;}
+	th
+	{
+		background-color:#6F0000;
+		color:white;
+		font-style:bold;
+	}
+		.titre a
+		{
+			color:#6F0000;
+			text-decoration:none;
+		}
+
+		.danger .titre::after
+		{
+			content:" (Réservé)";
+			color:red;
+			font-size:bold;
+		}
+
+/* Page profil */
+
+	.bloc-envoi
+	{
+		margin-top:20px;
+		text-align:center;
+	}
+		
+		.profil-page input, .profil-page select,textarea
+		{
+			width:100%;
+			padding: 1.5%;
+		}

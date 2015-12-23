@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<title>Médiathèque Côte Rambla</title>
+		<meta charset="UTF-8">
+		<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,300' rel='stylesheet' type='text/css'>
+		
+		<!-- Bootstrap --> 
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		
+		<!-- Rwd -->
+			<link rel="stylesheet" type="text/css" href="css/md.css">
+			<link rel="stylesheet" type="text/css" href="css/sm.css">
+			<link rel="stylesheet" type="text/css" href="css/xs.css">
+		
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	</head>
+	<body class="profil-page container-fluid">
+		<header class="row">
+			<h1>Médiathèque Côte Rambla</h1>
+			<div id="logo-rambla" class="col-lg-2 col-md-1 col-sm-12 col-xs-3">Médiatheque cote rambla</div>
+			<nav class="col-lg-10 col-md-11 col-sm-12 col-xs-9">
+				<ul class="col-lg-10 col-lg-offset-1 col-md-12">
+					<li class="home col-xs-2"><a href="index.html">Accueil</a></li>
+					<li class="emprunts col-xs-2 col-sm-offset-1"><a href="#">Mes prêts</a></li>
+					<li class="compte col-xs-2 col-sm-offset-1"><a href="profil.html">Mon compte</a></li>
+					<li class="login col-xs-2 col-sm-offset-1"><a href="connexion.html">Se connecter</a></li>
+				</ul>
+			</nav>
+		</header>
+		<main class="row">
+			<section>
+				<h2>Inscription</h2>
+				<form action="#" class="form">
+					<div class="col-xs-12">
+						<div class="bloc col-xs-12 col-md-6 col-lg-3">
+							<h3>Identité</h3>
+							<label for="nom">Nom :</label><br><input name="nom" id="nom" type="text" /><br>
+							<label for="prenom">Prénom :</label><br><input name="prenom" id="prenom" type="text" /><br>
+							<label for="naissance">Date de naissance:</label><br><input name="naissance" id="naissance" type="date" /><br>
+							<label for="mail">Mail :</label><br><input name="mail" id="mail" type="email" /><br>
+						</div>
+						<div class="bloc col-xs-12 col-md-6 col-lg-3 col-lg-offset-1">
+							<h3>Adresse :</h3>
+							<label for="adresse">Adresse:</label><br><textarea name="adresse" id="adresse" type="text"></textarea><br>
+							<label for="cp">CP :</label><br><input maxLength="6" name="cp" id="cp" type="text" /><br><label for="ville">Ville :</label><br><input name="ville" id="ville" type="text" /><br>
+						</div>
+						<div class="bloc col-xs-12 col-md-6 col-lg-3 col-lg-offset-1">
+							<h3>Abonnement:</h3>
+							<select name="type" class="col-lg-4 col-sm-9 col-xs-12">
+								<optgroup label="Physique">
+									<option value="magazine">Livres</option>
+									<option value="livre">Papier : Livres + Magazine</option>
+								</optgroup>
+								<optgroup label ="Multimédia">
+									<option value="dvd">Papier + CD</option>
+									<option value="k7">Papier + DVD + CD + K7</option>
+								</optgroup>
+							</select>
+						</div>						
+					</div>
+					<div class="bloc-envoi col-lg-4 col-lg-offset-4 col-md-6 col-md-offset-3 col-sm-10 col-sm-offset-1 col-xs-12 col-xs-offset-0 btn-lg">
+						<div class="checkbox">
+							<input type="checkbox" id="CGU" name="CGU" value="option1">
+							<label for="CGU">Je reconnais avoir accepté les conditions d'utilisation de la Médiathèque et du Polygone.</label>
+						</div>
+						<input type="submit" value="Envoyer">
+					</div>
+				</form>
+			</section>			
+		</main>
+
+		<footer class="row">
+			<p>Réalisation: <a href="#">Guillaume Di Nicola</a></p>
+		</footer>
+	</body>
+</html>

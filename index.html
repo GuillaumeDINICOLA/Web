@@ -4,125 +4,146 @@
 		<title>Médiathèque Côte Rambla</title>
 		<meta charset="UTF-8">
 		<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,300' rel='stylesheet' type='text/css'>
-		<link rel="stylesheet" type="text/css" href="style.css">
+		
+		<!-- Bootstrap --> 
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		
+		<!-- Rwd -->
+			<link rel="stylesheet" type="text/css" href="css/md.css">
+			<link rel="stylesheet" type="text/css" href="css/sm.css">
+			<link rel="stylesheet" type="text/css" href="css/xs.css">
+		
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 	</head>
-	<body>
-		<header>
+	<body class="main-page container-fluid">
+		<header class="row">
 			<h1>Médiathèque Côte Rambla</h1>
-			<div id="logo-rambla">Médiatheque cote rambla</div>
-			<nav>
-				<ul>
-					<li class="home"><a href="index.html">Accueil</a></li>
-					<li class="emprunts"><a href="#">Mes prêts</a></li>
-					<li class="compte"><a href="#">Mes retours</a></li>
+			<div id="logo-rambla" class="col-lg-2 col-md-1 col-sm-12 col-xs-3">Médiatheque cote rambla</div>
+			<nav class="col-lg-10 col-md-11 col-sm-12 col-xs-9">
+				<ul class="col-lg-10 col-lg-offset-1 col-md-12">
+					<li class="home col-xs-2"><a href="index.html">Accueil</a></li>
+					<li class="emprunts col-xs-2 col-sm-offset-1"><a href="#">Mes prêts</a></li>
+					<li class="compte col-xs-2 col-sm-offset-1"><a href="profil.html">Mon compte</a></li>
+					<li class="logout col-xs-2 col-sm-offset-1"><a href="inscription.html">Se déconnecter</a></li>
 				</ul>
 			</nav>
 		</header>
-		<main>
-			<section id="form-recherche">
-				<section id="monform">
+		<main class="row">
+			<section id="monform" class="col-lg-10 col-lg-offset-1 col-md-8 col-md-offset-2 col-xs-12 col-xs-offset-0 form">
 				<h2><i class="fa fa-search"></i> Rechercher un ouvrage</h2>
-				<form id="recherche" name="recherche" action ="#">
-					<label for="nom" id="labNom">Nom ouvrage : </label><input type="text" id="nom" name="nom"/><br>
-					<label for="auteur" id="labAuteur">Auteur : </label><input type="text" id="auteur" name="auteur"/><br>
-					<label for="annee" id="labAnnee">Année : </label>
-					<select name="annee">
-						<optgroup label="Avant Alexis Lucien">
-							<option value="1992">1992</option>
+				<form id="recherche" class="form" name="recherche" action ="#" class="row">
+					<label for="nom" id="labNom" class="col-lg-2 col-sm-3 col-xs-12">Nom ouvrage : </label><input type="text" class="col-lg-4 col-sm-9 col-xs-12" id="nom" name="nom"/>
+					<label for="auteur" id="labAuteur" class="col-lg-2 col-sm-3 col-xs-12">Auteur : </label><input type="text" class="col-lg-4 col-sm-9 col-xs-12" id="auteur" name="auteur"/>
+					<label for="annee" id="labAnnee" class="col-lg-2 col-sm-3 col-xs-12">Année : </label>
+					<select name="annee" class="col-lg-4 col-sm-9 col-xs-12">
+						<option value="2000">2000</option>
+						<option value="2001">2001</option>
+						<option value="2002">2002</option>
+						<option value="2003">2003</option>
+						<option value="2004">2004</option>
+						<option value="2005">2005</option>
+						<option value="2006">2006</option>
+						<option value="2007">2007</option>
+						<option value="2008">2008</option>
+						<option value="2009">2009</option>
+						<option value="2010">2010</option>
+						<option value="2011">2011</option>
+						<option value="2012">2012</option>
+						<option value="2013">2013</option>
+						<option value="2014">2014</option>	
+						<option value="2015">2015</option>
+					</select>
+					<label for="type" id="labType" class="col-lg-2 col-sm-3 col-xs-12">Média: </label>
+					<select name="type" class="col-lg-4 col-sm-9 col-xs-12">
+						<optgroup label="Papier">
+							<option value="magazine">magazine</option>
+							<option value="livre">livre</option>
 						</optgroup>
-						<optgroup label ="Après Alexis Lucien">
-							<option value="2000">2000</option>
-							<option value="2001">2001</option>
-							<option value="2002">2002</option>
-							<option value="2003">2003</option>
-							<option value="2004">2004</option>
-							<option value="2005">2005</option>
-							<option value="2006">2006</option>
-							<option value="2007">2007</option>
-							<option value="2008">2008</option>
-							<option value="2009">2009</option>
-							<option value="2010">2010</option>
-							<option value="2011">2011</option>
-							<option value="2012">2012</option>
-							<option value="2013">2013</option>
-							<option value="2014">2014</option>	
-							<option value="2015">2015</option>
+						<optgroup label ="Multimédia">
+							<option value="dvd">DVD</option>
+							<option value="k7">K7</option>
 						</optgroup>
-					</select><br>
-					<label for="edition" id="labEdition">Edition : </label><input type="text" id="edition" name="edition"/><br>
-					<input type="submit" value="Envoyer">
+					</select>				
+					<label for="edition" id="labEdition" class="col-lg-2 col-sm-3 col-xs-12">Edition : </label><input type="text" id="edition" class="col-lg-4 col-sm-9 col-xs-12" name="edition"/><br>
+					<input type="submit" class="col-lg-4 col-lg-offset-4 col-md-6 col-md-offset-3 col-xs-12 col-xs-offset-0" value="Envoyer">
 				</form>
-				</section>
-				<section id="resultats">
-					<table border="0">
-						<thead>
-							<tr>
-								<th>ID</th>
-								<th class="titre">Nom ouvrage</th>
-								<th>Auteur</th>
-								<th>Année</th>
-								<th>Edition</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td>1</td>
-								<td class="titre pris"><a href="article.html">En route pour le Pol...Petit Poulet</a></td>
-								<td>A.Lucien</td>
-								<td>2015</td>
-								<td>Editions Rambla</td>								
-							</tr>
-							<tr>
-								<td>2</td>
-								<td class="titre"><a href="article.html">Blabla</a></td>
-								<td>Machin-Chose</td>
-								<td>1986</td>
-								<td>Editions Ipsum</td>								
-							</tr>
-							<tr>
-								<td>3</td>
-								<td class="titre"><a href="article.html">Blabla</a></td>
-								<td>Machin-Chose</td>
-								<td>1986</td>
-								<td>Editions Ipsum</td>								
-							</tr>
-							<tr>
-								<td>4</td>
-								<td class="titre"><a href="article.html">Blabla</a></td>
-								<td>Machin-Chose</td>
-								<td>1986</td>
-								<td>Editions Ipsum</td>								
-							</tr>
-							<tr>
-								<td>5</td>
-								<td class="titre"><a href="article.html">Blabla</a></td>
-								<td>Machin-Chose</td>
-								<td>1986</td>
-								<td>Editions Ipsum</td>								
-							</tr>
-							<tr>
-								<td>6</td>
-								<td class="titre pris"><a href="article.html">Blabla</a></td>
-								<td>Machin-Chose</td>
-								<td>1986</td>
-								<td>Editions Ipsum</td>								
-							</tr>
-							<tr>
-								<td>7</td>
-								<td class="titre"><a href="article.html">Blabla</a></td>
-								<td>Machin-Chose</td>
-								<td>1986</td>
-								<td>Editions Ipsum</td>								
-							</tr>
-						</tbody>
-					</table>
-				</section>
-				
+			</section>
+			<section id="resultats" class="table-responsive col-xs-12">
+				<table border="0" class="table table-striped table-hover table-condensed">
+					<thead>
+						<tr>
+							<th>#</th>
+							<th>Titre</th>
+							<th>Auteur</th>
+							<th>Média</th>
+							<th>Année</th>
+							<th>Edition</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr class="danger">
+							<td>1</td>
+							<td class="titre"><a href="article.html">En route pour le Pol...Petit Poulet</a></td>
+							<td>A.Lucien</td>
+							<td>Livre</td>
+							<td>2015</td>
+							<td>Editions Rambla</td>								
+						</tr>
+						<tr>
+							<td>2</td>
+							<td class="titre"><a href="article.html">Blabla</a></td>
+							<td>Machin-Chose</td>
+							<td>Magazine</td>
+							<td>1986</td>
+							<td>Editions Ipsum</td>								
+						</tr>
+						<tr>
+							<td>3</td>
+							<td class="titre"><a href="article.html">Blabla</a></td>
+							<td>Machin-Chose</td>
+							<td>DVD</td>
+							<td>1986</td>
+							<td>Ipsum Movies</td>								
+						</tr>
+						<tr>
+							<td>4</td>
+							<td class="titre"><a href="article.html">Blabla</a></td>
+							<td>Machin-Chose</td>
+							<td>K7</td>
+							<td>1986</td>
+							<td>Ipsum Movies</td>								
+						</tr>
+						<tr>
+							<td>5</td>
+							<td class="titre"><a href="article.html">Blabla</a></td>
+							<td>Machin-Chose</td>
+							<td>Livre</td>
+							<td>1986</td>
+							<td>Editions Ipsum</td>								
+						</tr>
+						<tr class="danger">
+							<td>6</td>
+							<td class="titre"><a href="article.html">Blabla</a></td>
+							<td>Machin-Chose</td>
+							<td>Livre</td>
+							<td>1986</td>
+							<td>Editions Ipsum</td>								
+						</tr>
+						<tr>
+							<td>7</td>
+							<td class="titre"><a href="article.html">Blabla</a></td>
+							<td>Machin-Chose</td>
+							<td>Livre</td>
+							<td>1986</td>
+							<td>Editions Ipsum</td>								
+						</tr>
+					</tbody>
+				</table>
 			</section>
 		</main>
-		<footer>
-			<p>Made with pride by <a href="#">Guillaume Nicola</a></p>
+		<footer class="row">
+			<p>Réalisation: <a href="#">Guillaume Di Nicola</a></p>
 		</footer>
 	</body>
 </html>
